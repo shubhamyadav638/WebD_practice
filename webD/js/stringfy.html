@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        const people =[
+            {name:'abc', age:55, occupation:"developer"},
+            {name:'xyz', age:55, occupation:"designer"},
+            {name:'fgh', age:55, occupation:"manager"}
+        ]
+
+        // console.log(people);
+
+        // stringify ---- convert arr of obj into a str.. to send data on backend via in str formate
+
+        let str = JSON.stringify(people)
+        // console.log(str);
+
+        //parse ------ > to convert a str into arr of obj
+        let parsearr = JSON.parse(str)
+        console.log(parsearr);
+    </script>
+</body>
+</html>

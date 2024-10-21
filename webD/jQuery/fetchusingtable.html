@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch data using table</title>
+</head>
+<body>
+    
+    <table id="tablecontainer" border="2">
+
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>color</th>
+            <th>col4</th>
+        </tr>
+    </table>
+
+    <script>
+         fetch('https://reqres.in/api/user?page')
+            .then((response) => response.json())
+            .then((result) => {
+                console.log("result", result.data);
+            });   
+            function datafun(data) {
+                const table = document.getElementById('tablecontainer'); 
+                data.foreach(item =>{
+                    const row = table.insertrow();
+                })
+            }
+    </script>
+</body>
+</html>

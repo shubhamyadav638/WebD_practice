@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// a fun that takes a callback as a parameter 
+function user (callback){
+    const name = prompt ("Enter your name ");
+    //call the callback fun
+    callback(name)
+
+}
+
+// a callback fun - the fun which is pass as a para to another fun 
+
+// getting is the callback fun it will be executed when 
+function get (name){
+    document.write("hello  ", name);
+}
+
+
+// call fun and pass in the callback fun
+user(get)
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+
+    <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: 2px solid black;
+        }
+    </style>
+    <script>
+
+        // click btn to popup box
+        function clickevent() {
+            alert("clickme");
+        }
+// hover to change image using js
+        function mouseoverevent() {
+            document.getElementById("box").style.backgroundColor = "green";
+        }
+
+        function onmouseoutevent() {
+            document.getElementById("box").style.backgroundColor = "red";
+        }
+
+        
+    </script>
+</head>
+<body>
+
+    <button onclick="clickevent()">click me</button>
+
+    <div id="box" onmouseover="mouseoverevent()" onmouseout="onmouseoutevent()"></div>
+
+</body>
+</html>

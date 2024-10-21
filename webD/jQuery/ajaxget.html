@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    // show data into alaert
+// $(document).ready(function(){
+// //     $("button").click(function(){
+// //   $.get("demo_test.txt", function(data, status){
+// //       alert("data" + data + '\nstatus:'+status);
+// //   });
+// // });
+//   });
+
+
+ // tassk ----> show data into div1
+ $(document).ready(function(){
+     $("button").click(function(){
+   $.get("demo_test.txt", function(data, status){
+    //    alert("data" + data + '\nstatus:'+status);
+       $('#div1').html(data);
+   });
+ });
+  });
+
+</script>
+</head>
+<body>
+
+<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+<button>Get External Content</button>
+
+</body>
+</html>

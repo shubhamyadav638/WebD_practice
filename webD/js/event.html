@@ -1,0 +1,43 @@
+<html>  
+<head> Javascript Events </head>  
+<style>
+    
+</style>
+<body >  
+<script language="Javascript" type="text/Javascript">  
+    <!--  
+    function clickevent()  
+    {  
+       alert("clickme") 
+    }  
+
+    function mouseoverevent()  
+    {  
+        document.write("mouseoverevent");  
+        alert("mouseoverevent work")
+    }  
+    
+    function keydownevent()  
+    {  
+        alert("keydown")
+    } 
+
+    //-->  
+    function focusevent()  
+    {  
+       document.getElementById("input1").style.background="red"
+    } 
+
+   
+</script>  
+<form>  
+<!-- <input type="button" onclick="clickevent()" value="Who's this?"/>  
+
+<input type="button" onmouseover="mouseoverevent()" value="mouseover"/>   -->
+
+<input type="text" id="input1" onfocus="focusevent()"/>  
+
+<input type="text" id="input1" onkeydown="keydownevent()"/>
+</form>  
+</body>  
+</html>  

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- jQuery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p id="pl">If you click on the "Hide" button, I will disappear.</p>
+    <button onclick="hide()">Hide</button>
+
+    <script>
+
+        // if you want to run jquery , then ensure document is ready 
+        // this is to prevent any jquery code from running before the document is finished loading (is ready)
+        $(document).ready(function(){
+
+            // $----> selector to select an element
+
+
+            // btn click to hide para
+          $('button').click(function(){
+            $('p').hide();
+          })
+            
+
+});
+
+
+//para click to hide para 
+$(document).ready(function(){
+
+// $----> selector to select an element
+
+
+// $('#p1')
+$('p').click(function(){
+   
+$(this).hide();
+})
+});
+
+
+// using js
+// function hide (){
+//     document.getElementById('pl').style.display = 'none';
+//     const id = document.getElementById('pl');
+// }
+
+    </script>
+</body>
+</html>

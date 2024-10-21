@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator web page</title>
+    <link rel="stylesheet" href="./cal.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="3">
+                <label for="textno1">First input</label>
+            </td>
+            <td colspan="3">
+                <input type="text" name="textno1" id="textno1">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="3">
+                <label for="textno2">Second input</label>
+            </td>
+            <td colspan="3">
+                <input type="text" id="textno2" name="textno2">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="3">
+                <label for="textres">Result</label>
+            </td>
+            <td colspan="3">
+                <input type="text" name="textres" id="textres">
+            </td>
+        </tr>
+
+        <td>
+            <input onclick="plus_click()" type="button" value="+">
+        </td>
+
+        <td>
+            <input onclick="minous_click()" type="button" value="-">
+        </td>
+
+        <td>
+            <input onclick="mulltiply_click()" type="button" value="*">
+        </td>
+
+        <td>
+            <input onclick="divide_click()" type="button" value="/">
+        </td>
+
+    </table>
+    <script src="./cal.js">
+    </script>
+</body>
+
+</html>

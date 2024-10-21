@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+
+
+</head>
+
+<body>
+    <div id="contaner"></div>
+
+
+    <script>
+        // const box = document.getElementById('contaner')
+        // box.innerHTML = 'Shubham'
+        // const divelement = document.createElement('p')
+        // box.appendChild(divelement)
+        // divelement.innerHTML ="raghvendra"
+
+
+        // arr dom
+
+
+        const arr = [
+            { id: 1, name: 'abc', age: 23 },
+            { id: 2, name: 'xyz', age: 28 },
+            { id: 3, name: 'example', age: 32 }
+        ]
+
+        const renderage = (arr) => {
+            const contaner = document.getElementById('contaner')
+            contaner.innerHTML = 'Shubham'
+
+            arr.forEach((element) => {
+                const dynami = document.addEventListener('button')
+                contaner.appendChild(dynami)
+                dynami.innerHTML = 'Click me '
+                dynami.addEventListener('click', function () {
+                    alert('hello')
+                })
+
+                const dynamic = document.createElement('div')
+                contaner.appendChild(dynamic)
+                dynamic.innerHTML = `${element.id}- ${element.name} is ${element.age} year of old`
+
+            });
+        }
+
+        renderage(arr)
+
+
+
+    </script>
+</body>
+
+</html>

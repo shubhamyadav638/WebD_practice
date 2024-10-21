@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart hover</title>
+    <style>
+        #cart{
+            height: 250px;
+            width: 250px;
+            border: 2px solid;
+        }
+    </style>
+
+    <script>
+      
+      document.addEventListener('DOMContentLoaded', function() {
+    
+      const addToCartBtn = document.getElementById('addToCartBtn');
+      const cartCount = document.getElementById('cartCount');
+
+      let count = 0;
+
+      addToCartBtn.addEventListener('click', function() {
+        count++;
+        cartCount.textContent = count;
+    });
+});
+
+    </script>
+</head>
+<body>
+    Cart- <span id="cartCount">0</span>
+    <div id="cart">
+        <button id="addToCartBtn">Add to Cart</button>
+        
+    </div>
+</body>
+</html>

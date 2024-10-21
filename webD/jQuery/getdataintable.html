@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>AJAX Table Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>Users Table</h2>
+    <table id="users-table" border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated here -->
+        </tbody>
+    </table>
+
+    <script>
+        $(document).ready(function() {
+            // Perform an AJAX GET request
+            $.get("https://jsonplaceholder.typicode.com/users", function(data) {
+                // Loop through the retrieved data and populate the table
+                $.each(data, function(index, user) {
+                    $('#users-table tbody').append(
+                        '<tr>' +
+                        '<td>' + user.id + '</td>' +
+                        '<td>' + user.name + '</td>' +
+                        '<td>' + user.email + '</td>' +
+                        '</tr>'
+                    );
+                });
+            });
+        });
+    </script>
+</body>
+</html>

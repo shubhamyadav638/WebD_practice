@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes anination_circle {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(200px, 300px);
+                /* transform: translate(200px, 200px) rotate(360deg) skew(360deg) scale(5, 2); */
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+            /* 0% {
+                left: 0px;
+                top: 0px;
+                background-color: aqua;
+            }
+            25% {
+                left: 400px;
+                top: 0px;
+                background-color: black;
+            }
+            50% {
+                left: 400px;
+                top: 400px;
+                background-color: blue;
+            }
+            75% {
+                right: 400px;
+                top: 400px;
+                background-color: brown;
+            }
+            100% {
+                top: 0px;
+                left: 0px;
+                background-color: blueviolet;
+            } */
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: anination_circle;
+            animation-duration: 4s;
+            /* position: relative;
+            animation-delay: 5s;*/
+            /* animation-iteration-count: infinite; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

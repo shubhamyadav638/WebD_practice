@@ -1,0 +1,102 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff; /* fallback for old browsers */
+    background: linear-gradient(to bottom, #ff7e5f, #ffcc6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+nav h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    padding-top: 80px; /* Ensure content starts below the fixed header */
+}
+
+.download-section {
+    padding: 50px 0;
+}
+
+form {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff0078, #ff7e5f); /* pink to orange gradient */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-links li {
+    margin-right: 20px;
+}
+
+nav .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links li a:hover {
+    color: #ff7e5f; /* Change color on hover */
+}

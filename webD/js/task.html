@@ -1,0 +1,40 @@
+<html>
+<head> 
+<h1> Javascript Events </h1>
+
+<script>
+	
+        function focusevent()  
+    {  
+       document.getElementById("input1").style.background="green"
+    } 
+
+    function mouseoverevent()  
+    {  
+       document.getElementById("input1").style.background="blue"
+    } 
+    function mouseout()  
+    {  
+       document.getElementById("input1").style.background="red"
+    } 
+
+    function onkeydownEvent()
+    {  
+       document.getElementById("input1").style.background="aqua"
+    } 
+   
+    function  onkeyupEvent()
+    {  
+       document.getElementById("input1").style.background="orange"
+    } 
+
+</script>
+</head>
+<body onload="alert('Page successfully loaded')">
+
+<input type="text" id="input1" onfocus="focusevent()" onmouseover="mouseoverevent()"  onmouseout="mouseout()" onkeydown="onkeydownEvent()" Keyup="onkeyupEvent()" /> 
+
+</body>
+</html>
+
+ 

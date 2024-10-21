@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiply Two Numbers</title>
+    <style>
+        
+        body {
+            height: 600px;
+            width: 50%;
+            border: 3px solid black;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Multiply Two Numbers</h1>
+
+    <button onclick="calculateProduct()">Calculate Product</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateProduct() {
+            
+            const num1 = 20;
+            const num2 = 5;
+
+            const product = num1 * num2;
+
+            document.getElementById('result').innerText = `The product between ${num1} and ${num2} is: ${product}`;
+        }
+    </script>
+
+</body>
+</html>

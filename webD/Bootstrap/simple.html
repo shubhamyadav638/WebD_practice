@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Simple HTML Form</title>
+</head>
+<body>
+
+<h2>Simple Form</h2>
+
+<div class="container mt-3">
+    <form action="/submit-form" method="post">
+        <!-- Name Input -->
+        <div>
+            <label for="name">Name:</label>
+            <input class="form-control" type="text" id="name" name="name">
+        </div>
+    
+        <!-- Email Input -->
+        <div>
+            <label for="email">Email:</label>
+            <input class="form-control form-action" type="email" id="email" name="email" >
+        </div>
+    
+        <!-- Submit Button -->
+        <div>
+            <button class="btn btn-secondary my-4 mx-5" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

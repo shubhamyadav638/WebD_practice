@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter {
+            font-size: 50px;
+            color: brown;
+        }
+        
+        p::first-line {
+            color: green;
+        }
+        
+        li::after {
+            content: '--';
+        }
+        
+        li::before {
+            content: '!!';
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>india</li>
+        <li>usa</li>
+        <li>aus</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus voluptatibus fugiat deleniti eaque rem numquam sapiente tenetur beatae deserunt, repellat quia dolorem facilis accusantium quibusdam iure placeat totam repellendus ratione?</p>
+</body>
+
+</html>

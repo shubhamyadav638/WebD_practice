@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task Today</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .boxcontent {
+            height: 650px;
+            width: 500px;
+            border: 5px solid #000;
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+        }
+
+        img {
+            height: 400px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: opacity 0.3s ease;
+        }
+
+        .boxcontent:hover img {
+            opacity: 0;
+        }
+
+        .boxcontent:hover .hover-image {
+            opacity: 1;
+        }
+
+        .hover-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 400px;
+            opacity: 0;
+            transition: opacity 3s ease;
+            background-size: cover;
+            background-position: center;
+        }
+
+        button {
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            margin-top: 20px;
+            cursor: pointer;
+            border: 2px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            display: flex;
+        }
+
+        p {
+            margin-left: 10px;
+        }
+
+        .heart {
+            height: 15px;
+            width: 15px;
+            border: 2px solid #000;
+            margin-right: 10px;
+        }
+        
+        
+     
+    </style>
+
+    <script>
+        function clickEvent(id) {
+            document.getElementById(id).style.backgroundColor = 'red';
+        }
+        
+//Add cart
+        document.addEventListener('DOMContentLoaded', function() {
+    
+    const addToCartBtn = document.getElementById('addToCartBtn');
+    const cartCount = document.getElementById('cartCount');
+
+    let count = 0;
+
+    addToCartBtn.addEventListener('click', function() {
+      count++;
+      cartCount.textContent = count;
+  });
+});
+
+// 2nd box
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const addToCartBtn = document.getElementById('addToCartBtn1');
+    const cartCount = document.getElementById('cartCount1');
+
+    let count = 0;
+
+    addToCartBtn.addEventListener('click', function() {
+      count++;
+      cartCount.textContent = count;
+  });
+});
+
+//3ed box
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const addToCartBtn = document.getElementById('addToCartBtn2');
+    const cartCount = document.getElementById('cartCount2');
+
+    let count = 0;
+
+    addToCartBtn.addEventListener('click', function() {
+      count++;
+      cartCount.textContent = count;
+  });
+});
+
+//4th box
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const addToCartBtn = document.getElementById('addToCartBtn3');
+    const cartCount = document.getElementById('cartCount3');
+
+    let count = 0;
+
+    addToCartBtn.addEventListener('click', function() {
+      count++;
+      cartCount.textContent = count;
+  });
+});
+    </script>
+
+</head>
+<body>
+
+    <div class="box">
+        <div class="boxcontent">
+            <img src="../image/image1.jpg" alt="not found">
+            <div class="hover-image" style="background-image: url('../image/image7.jpg');"></div>
+            <button onclick="clickEvent('heart1')">
+                <span id="heart1" class="heart"></span>WISHLIST
+            </button>
+            <p>Size: 32</p>
+            <p><b>Rs: 1559</b> <span style="text-decoration: line-through;">Rs: 2500</span> <span style="color: red;">(25% off)</span></p>
+            Cart- <span id="cartCount">0</span>
+            <button id="addToCartBtn">Add to Cart</button>
+                
+        
+        </div>
+
+        <div class="boxcontent">
+            <img src="../image/image2.jpg" alt="not found">
+            <div class="hover-image" style="background-image: url('../image/image6.jpg');"></div>
+            <button onclick="clickEvent('heart2')">
+                <span id="heart2" class="heart"></span>WISHLIST
+            </button>
+            <p>Size: 32</p>
+            <p><b>Rs: 1259</b> <span style="text-decoration: line-through;">Rs: 2000</span> <span style="color: red;">(20% off)</span></p>
+            Cart- <span id="cartCount1">0</span>
+            <button id="addToCartBtn1">Add to Cart</button>
+        </div>
+
+        <div class="boxcontent">
+            <img src="../image/image3.jpg" alt="not found">
+            <div class="hover-image" style="background-image: url('../image/image5.jpg');"></div>
+            <button onclick="clickEvent('heart3')">
+                <span id="heart3' class="heart"></span>WISHLIST
+            </button>
+            <p>Size: 32</p>
+            <p><b>Rs: 1559</b> <span style="text-decoration: line-through;">Rs: 2500</span> <span style="color: red;">(25% off)</span></p>
+            Cart- <span id="cartCount2">0</span>
+            <button id="addToCartBtn2">Add to Cart</button>
+        </div>
+
+        <div class="boxcontent">
+            <img src="../image/image4.jpg" alt="not found">
+            <div class="hover-image" style="background-image: url('../image/image2.jpg');"></div>
+            <button onclick="clickEvent('heart4')">
+                <span id="heart4" class="heart"></span>WISHLIST
+            </button>
+            <p>Size: 32</p>
+            <p><b>Rs: 1259</b> <span style="text-decoration: line-through;">Rs: 2000</span> <span style="color: red;">(20% off)</span></p>
+            Cart- <span id="cartCount3">0</span>
+            <button id="addToCartBtn3">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

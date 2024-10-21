@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- jQuery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- <p id="pl" onclick="hidepara()">this is a para </p> -->
+    
+    Name: <input type="text" name="fullname"><br>
+    <script>
+
+
+// input box used all event using JQuery
+
+$(document).ready(function(){
+//   $("input").focus(function(){
+//     $(this).css("background-color", "yellow");
+//   });
+
+
+//   $("input").blur(function(){                      // blur work with focus
+//     $(this).css("background-color", "green");
+//   });
+
+//   $("input").mouseleave(function(){
+//   alert("Bye! You now leave p1!");
+// });
+
+//mousehover
+// $("input").hover(function(){
+//   alert("You entered p1!");
+// },
+// function(){
+//   alert("Bye! You now leave p1!");
+// });
+
+$("input").mouseup(function(){
+  alert("Mouse up over p1!");
+});
+
+});
+
+
+
+
+
+
+
+// task--> useig js hide para on para click
+
+// function hidepara (){
+//     document.getElementById('pl').style.display = 'none';
+//     const id = document.getElementById('pl');
+// }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<style>
+
+body {
+    margin:0;
+    padding:0;
+    
+}
+
+.heading{
+    text-align:center;
+}
+
+form {
+    width: 500px;
+    margin: 50px auto;
+    padding: 87px 66px;
+    box-shadow: 1px 0px 5px;
+}
+
+
+.box {
+    margin-bottom: 25px;
+}
+
+.box label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.box input,
+.box select,
+.box textarea {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+.box input[type="radio"],
+.box input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+button {
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 2px;
+    font-size: 21px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+</style>

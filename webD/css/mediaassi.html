@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiv</title>
+
+    <style>
+        body{
+            background-color: gray;
+        }
+        .parent{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .child{
+            height: 100px;
+            width: 20%;
+            border: 5px solid;
+            margin: 10px;
+
+        }
+@media screen and (min-width:376px)and (max-width:768px){
+    body{
+        background-color: blue;
+         }
+    .child{
+        width: 44%;
+    }
+}
+@media screen and (min-width:768px)and (max-width:992px){
+    body{
+        background-color:yellow;
+    }
+    .child{
+        width: 28%;
+    }
+}
+@media screen and (min-width:992px)and (max-width:1200px){
+    body{
+        background-color:red;
+    }
+}
+@media screen and (min-width:992px)and (max-width:1200px){
+    body{
+        background-color:pink;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>

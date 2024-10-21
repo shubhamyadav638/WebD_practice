@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- 
+    <style>
+/* box move usig css */
+        .box {
+            height:300px ;
+            width: 300px;
+            background-color: red;
+            position: relative; /* or absolute */
+            animation: move 2s linear;
+}
+
+@keyframes move{
+
+
+    from{
+        /* left:0px; */
+        transform: translate(0px);
+    }
+    to{
+        /* left: 300px; */
+        transform: translate(300px);
+    }
+}
+    </style> -->
+</head>
+<body>
+    <div class="box" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+
+<script>
+    $(document).ready(function(){
+        $(".box").animate({
+     
+      left: '300px',
+
+      
+    });
+  });
+
+</script>
+
+
+
+</body>
+</html>
